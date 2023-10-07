@@ -1,7 +1,5 @@
 var seconds = "00";
 var tens = "00";
-var mints = "0";
-var outputMints = document.querySelector(".mints")
 var outputSecond = document.querySelector(".seconds");
 var outputTens = document.querySelector(".tens");
 var startBtn = document.querySelector(".start");
@@ -18,10 +16,8 @@ stopBtn.addEventListener('click' , ()=>{
 });
 resetBtn.addEventListener('click', ()=>{
     clearInterval(Interval);
-    mints = "0";
     seconds = "00";
     tens = "00";
-    outputMints.innerHTML = mints;
     outputSecond.innerHTML = seconds;
     outputTens.innerHTML = tens;
 });
@@ -42,10 +38,5 @@ function startTime (){
     }
     if(seconds > 9){
         outputSecond.innerHTML = seconds;
-    }
-    if(seconds > 60){
-        mints++
-        outputMints.innerHTML =  mints;
-        seconds = "0"
     }
 };
