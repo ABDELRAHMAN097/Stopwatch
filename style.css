@@ -16,8 +16,11 @@ h1{
     background-color: rgba(209, 4, 250, 0.295);
     border-radius: 10px;
 }
-.show{
+.dont-show{
   display: none;
+}
+.show{
+  display: block;
 }
 
 

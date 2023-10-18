@@ -10,10 +10,14 @@ var resetBtn = document.querySelector(".reset");
 var loading = document.querySelector(".loading");
 var Interval;
 
-function boomLoading() {
-  loading.classList.toggle("show");
+function dontshowLoading() {
+  loading.classList("dont-show");
 }
-startBtn.addEventListener("click", boomLoading);
+function showLoading() {
+    loading.classList("show");
+  }
+startBtn.addEventListener("click", dontshowLoading);
+stopBtn.addEventListener("click" , showLoading)
 startBtn.addEventListener("click", () => {
   clearInterval(Interval);
   Interval = setInterval(startTime, 10);
