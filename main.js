@@ -52,7 +52,7 @@ function startTime() {
   if (seconds > 9) {
     outputSecond.innerHTML = seconds;
   }
-  if (seconds > 59) {
+  if (seconds > 58) {
     mints++;
     outputMints.innerHTML = mints;
     seconds = "0";
