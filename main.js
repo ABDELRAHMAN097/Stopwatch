@@ -43,7 +43,7 @@ function startTime() {
   if (tens > 9) {
     outputTens.innerHTML = tens;
   }
-  if (tens > 99) {
+  if (tens > 98) {
     seconds++;
     outputSecond.innerHTML = "0" + seconds;
     tens = "0";
